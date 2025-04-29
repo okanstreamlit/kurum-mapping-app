@@ -10,8 +10,6 @@ from sentence_transformers import SentenceTransformer, util
 
 st.set_page_config(layout="wide")
 
-st.write("Kurum ve Kurum Tipi Eşlemesi Uygulaması")
-
 # st.image('Bupa Logo.png', width = 100)
 # st.image(os.path.join(os.getcwd(), 'application', 'Bupa Logo.png'), width = 100)
 st.image(os.path.join(os.getcwd(), "Bupa Logo.png"), width=100)
