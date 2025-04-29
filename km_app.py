@@ -16,7 +16,8 @@ st.write(os.getcwd())
 os.path.join(os.getcwd(), 'intfloat', 'e5-base-v2-local')
 
 #st.image('Bupa Logo.png', width = 100)
-st.image(os.path.join(os.getcwd(), 'application', 'Bupa Logo.png'), width = 100)
+#st.image(os.path.join(os.getcwd(), 'application', 'Bupa Logo.png'), width = 100)
+st.image(os.path.join(os.getcwd(), 'kurum-mapping-app', 'Bupa Logo.png'), width = 100)
 #st.image('C:\\Users\\okan.koklu\\Desktop\\Asil Projeler\\Kurum Mapping\\application\\Bupa Logo.png', width = 100)
 
 st.title('Kurum ve Kurum Tipi Eşlemesi')
@@ -48,17 +49,20 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.write('\n')
 #st.image('dogru csv.png')
-st.image(os.path.join(os.getcwd(), 'application',  'dogru csv.png'))
+#st.image(os.path.join(os.getcwd(), 'application',  'dogru csv.png'))
+st.image(os.path.join(os.getcwd(), 'kurum-mapping-app',  'dogru csv.png'))
 
 st.write('\n')
 
 @st.cache_resource
 def load_references():
-    return joblib.load(os.path.join(os.getcwd(), 'application', 'reference_elements.pkl'))
+    #return joblib.load(os.path.join(os.getcwd(), 'application', 'reference_elements.pkl'))
+    return joblib.load(os.path.join(os.getcwd(), 'kurum-mapping-app', 'reference_elements.pkl'))
 
 @st.cache_resource
 def load_model():
-    return SentenceTransformer(os.path.join(os.getcwd(), 'application', 'intfloat', 'e5-base-v2-local'))
+    #return SentenceTransformer(os.path.join(os.getcwd(), 'application', 'intfloat', 'e5-base-v2-local'))
+    return SentenceTransformer(os.path.join(os.getcwd(), 'kurum-mapping-app', 'intfloat', 'e5-base-v2-local'))
     #return SentenceTransformer("intfloat/e5-base-v2-local")
 
 def button_clicked_to_show():
